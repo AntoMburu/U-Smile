@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="8dp"
+    android:layout_marginLeft="4dp"
+    android:layout_marginTop="4dp"
+    android:layout_marginEnd="8dp"
+    android:layout_marginRight="4dp"
+    android:background="@color/colorPrimaryDark"
+    app:cardBackgroundColor="@color/colorText"
+    app:cardCornerRadius="8dp"
+    app:contentPadding="0dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="127dp"
+        android:background="@color/colorText">
+
+        <!-- youtube thumbnail view to show the thumbnail of videos -->
+
+        <com.google.android.youtube.player.YouTubeThumbnailView
+            android:id="@+id/video_thumbnail_image_view"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="5dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginBottom="5dp"
+            android:background="@color/common_google_signin_btn_text_light_pressed"
+            android:contentDescription="image_view_desc"
+            android:scaleType="center" />
+
+        <TextView
+            android:id="@+id/video_title_label"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginEnd="4dp"
+            android:layout_toEndOf="@+id/video_thumbnail_image_view"
+            android:layout_toRightOf="@+id/video_thumbnail_image_view"
+            android:text="Title of Video"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textSize="16sp" />
+
+
+        <TextView
+            android:id="@+id/video_duration_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginBottom="0dp"
+            android:drawableLeft="@drawable/ic_access_time_black_24dp"
+            android:drawablePadding="4dp"
+            android:gravity="center_vertical|end"
+            android:text="24.33min"
+            android:textColor="@color/common_google_signin_btn_text_dark_pressed"
+            android:textSize="14sp" />
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

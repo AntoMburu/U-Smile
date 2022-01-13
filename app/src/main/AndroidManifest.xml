@@ -1,0 +1,97 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.NBT_Tech.U_Smile">
+
+    <uses-permission android:name="android.permission.CALL_PHONE" />
+    <uses-permission android:name="android.permission.SEND_SMS"/>
+    <uses-permission android:name="android.permission.RECEIVE_SMS"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_WIFI_STATE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="U-Smile"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+
+
+        <activity
+            android:name=".activities.MainActivity"
+            android:screenOrientation="portrait"
+            android:label="Home">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <activity
+            android:name=".activities.ChooseActivity"
+            android:screenOrientation="portrait"
+            android:label="ChooseActivity"  >
+        </activity>
+
+        <activity
+            android:name=".activities.ActivityDisplay"
+            android:screenOrientation="portrait"
+            android:label="Activity">
+        </activity>
+
+        <activity
+            android:name=".activities.RegisterActivity"
+            android:screenOrientation="portrait"
+            android:label="Create Account">
+
+        </activity>
+        <activity
+            android:name=".activities.LoginActivity"
+            android:screenOrientation="portrait"
+            >
+
+        </activity>
+        <activity
+            android:name=".activities.UsersListActivity"
+            android:screenOrientation="portrait"
+            />
+
+        <activity
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar"
+
+            android:name=".activities.chat"
+            android:screenOrientation="portrait"
+            android:label="Smile Chat"/>
+        <activity
+            android:name=".activities.game1"
+            android:screenOrientation="portrait"
+            android:label="AI Dungeon"/>
+        <activity
+            android:name=".activities.game2"
+            android:screenOrientation="portrait"
+            android:label="Slither"/>
+        <activity
+            android:name=".activities.game3"
+            android:screenOrientation="portrait"
+            android:label="Shell Shockers"/>
+        <activity
+            android:name=".activities.councill"
+            android:screenOrientation="portrait"
+            android:label="Counsellors"/>
+        <activity android:name=".activities.Pic"
+            android:label="Pictures"/>
+        <activity android:name=".activities.Music"
+            android:label="Music"/>
+        <activity android:name=".activities.Vid"
+            android:label="Videos"/>
+        <activity android:name=".activities.YoutubePlayerActivity" />
+
+        <meta-data
+            android:name="preloaded_fonts"
+            android:resource="@array/preloaded_fonts" />
+    </application>
+
+
+
+</manifest>
